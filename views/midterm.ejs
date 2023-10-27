@@ -1,0 +1,36 @@
+<html>
+
+<head>
+<title>Midterm</title>
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+
+</head>
+
+<body>
+
+<div class="container">
+
+<div class="mt-4">
+
+	<div class="my-2">
+		<h2>Problem 1 (HTML templating with EJS)</h2>
+	</div>
+		
+	<p>There is <strong>no</strong> client-side javascript in this question.</p>
+
+	<p>Start by converting this file from HTML to an EJS template. Create a route to serve it up here: <a href="http://localhost:8080/midterm">http://localhost:8080/midterm</a></p>
+	
+	<p>Then, using server-side templateing, replace the fake list of words below with all the words from the database table <em>words</em>.</p>
+
+	<div>
+		<% for (let word of words) { %>
+			<div><%=word.text%></div>
+		<% } %>
+	</div>
+
+</div>
+
+</body>
+
+</html>

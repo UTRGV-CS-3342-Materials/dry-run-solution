@@ -1,0 +1,69 @@
+<html>
+
+<head>
+<title>Midterm</title>
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+
+</head>
+
+<body>
+
+<div class="container">
+
+<div class="mt-4">
+
+	<div class="my-2">
+		<h2>Problem 2 (AJAX)</h2>
+	</div>
+
+	<p>This problem <strong>does not</strong> use server-side templating, the code is all client-side.</p>
+
+	<div class="my-2">
+		In the database <em>instructors</em> table is information about various CS instructors.
+		But let's be real, all that matters is how awesome they are.
+	</div>	
+	
+	<div class="my-2">
+		When you click the button below, make an AJAX call to retrieve the
+		instructor information from the database (no page reload here). <strong>Do not</strong>
+		send unnecessary extra information about the instructors, only what you need for this
+		problem.
+	</div>
+
+	<div class="my-2">
+		Dynamically display each <strong>instructor	name</strong> and <strong>how awesome they are</strong>
+		as <em>list items</em> in the list below (just like Example Guy, who you can get rid of). You can
+		only alter this file to add ids or classes, the rest of your answer should be in the ajax.js file.
+	</div>
+
+	<div class="my-2">
+		You may create the new list elements in any of the ways that we went over in class
+		(html string, create-and-modify in code, cloning).
+	</div>
+
+	<div class="my-2">
+		<em>You do not have to implement error handling for failed AJAX requests.</em>
+	</div>
+
+	<hr/>
+
+	<h4>How Awesome Are They?</h4>
+
+	<div>
+		<button class="btn btn-primary my-4" id="trigger">Show me.</button>
+	</div>
+
+	<div>
+		<ul id="theList">
+			<!-- <li class="text-success">Example Guy: Not Awesome.</li> -->
+		</ul>
+	</div>
+		
+</div>
+
+<script src="ajax.js"></script>
+
+</body>
+
+</html>
